@@ -31,48 +31,21 @@ str(data)
 colSums(is.na(data))
 data <- na.omit(data)
 
-#Convert variable data type to integer
+#Change data type of variables to factor
 data$checking_status <- factor(data$checking_status)
-data$checking_status <- as.integer(factor(data$checking_status))
-
 data$credit_history <- factor(data$credit_history)
-data$credit_history <- as.integer(factor(data$credit_history))
-
 data$purpose <- factor(data$purpose)
-data$purpose <- as.integer(factor(data$purpose))
-
 data$savings_status <- factor(data$savings_status)
-data$savings_status <- as.integer(factor(data$savings_status))
-
 data$employment <- factor(data$employment)
-data$employment <- as.integer(factor(data$employment))
-
 data$personal_status <- factor(data$personal_status)
-data$personal_status <- as.integer(factor(data$personal_status))
-
 data$other_parties <- factor(data$other_parties)
-data$other_parties <- as.integer(factor(data$other_parties))
-
 data$property_magnitude <- factor(data$property_magnitude)
-data$property_magnitude <- as.integer(factor(data$property_magnitude))
-
 data$other_payment_plans <- factor(data$other_payment_plans)
-data$other_payment_plans <- as.integer(factor(data$other_payment_plans))
-
 data$housing <- factor(data$housing)
-data$housing <- as.integer(factor(data$housing))
-
 data$job <- factor(data$job)
-data$job <- as.integer(factor(data$job))
-
 data$own_telephone <- factor(data$own_telephone)
-data$own_telephone <- as.integer(factor(data$own_telephone))
-
 data$foreign_worker <- factor(data$foreign_worker)
-data$foreign_worker <- as.integer(factor(data$foreign_worker))
-
 data$class <- factor(data$class)
-data$class <- as.integer(factor(data$class))
 
 #Q2.b)What variables are in your data – a summary description (like the table describing the chimera dataset in the assignments). 
 #If you have a large data set, only include those variables that are relevant
